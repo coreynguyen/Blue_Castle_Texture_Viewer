@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BCTV" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw_w64_x32" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/BCTV" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="mingw_w64_x32" />
+				<Option parameters='&quot;G:\SteamLibrary\steamapps\common\deadrising3\_DUMP\Missing Prop\Textures\otr-missingprop\Test Textures\Dead Rising 2\PC\missingd.bct&quot;' />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/BCTV" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="mingw_w64_x32" />
+				<Option parameters='&quot;G:\SteamLibrary\steamapps\common\deadrising3\_DUMP\Missing Prop\Textures\otr-missingprop\Test Textures\Dead Rising 2 - Case West\meat.bct&quot;' />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-DWINDOWS" />
+			<Add option="-DMINGW" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add option="-DREENTRANT" />
+			<Add directory="$(#wx)/include" />
+			<Add directory="\\mycloudpr4100\Public\Private\Coding\Cpp\_Libraries\wxWidgets-3.2.7\include" />
+			<Add directory="include" />
+			<Add directory="../BCTV" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+			<Add directory="src" />
+			<Add directory="../BCTV" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lpthread -Wl,-Bdynamic" />
+			<Add option="-mthreads" />
+			<Add option="-pthread" />
+			<Add library="libwx_mswu_core-3.2" />
+			<Add library="libwx_baseu-3.2" />
+			<Add library="libwxtiff-3.2" />
+			<Add library="libwxjpeg-3.2" />
+			<Add library="libwxpng-3.2" />
+			<Add library="libwxzlib-3.2.a" />
+			<Add library="winspool" />
+			<Add library="comctl32" />
+			<Add library="comdlg32" />
+			<Add library="ole32" />
+			<Add library="oleaut32" />
+			<Add library="advapi32" />
+			<Add library="uuid" />
+			<Add library="shell32" />
+			<Add library="wsock32" />
+			<Add library="shlwapi" />
+			<Add library="version" />
+			<Add library="oleacc" />
+			<Add library="uxtheme" />
+			<Add library="kernel32" />
+			<Add library="user32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add library="imm32" />
+			<Add library="m" />
+			<Add library="ws2_32" />
+			<Add directory="\\mycloudpr4100\Public\Private\Coding\Cpp\_Libraries\wxWidgets-3.2.7\lib" />
+			<Add directory="src" />
+			<Add directory="../BCTV" />
+		</Linker>
+		<Unit filename="include/BCTImage.h" />
+		<Unit filename="include/BCTV.h" />
+		<Unit filename="include/DDSImage.h" />
+		<Unit filename="include/ImageBase.h" />
+		<Unit filename="include/resource.h" />
+		<Unit filename="main.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/BCTImage.cpp" />
+		<Unit filename="src/BCTV.cpp" />
+		<Unit filename="src/DDSImage.cpp" />
+		<Unit filename="src/icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
